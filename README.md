@@ -15,7 +15,7 @@ A simple iFrame chat demo using .postMessage.
 
 ### How it works:
 
-- These iFrame chat boxes communicates with the parent and the parent relays the child element's messages to all of the other children. 
+- These iFrame chat boxes communicate with the parent and the parent relays the child element's messages to all of the other children. 
 
 - window.postMessage methods safely enables cross-origin communication. As long as the parent allows the child iFrame to communicate with it, it can safely send and receive data across domains and child iFrame elements.
 
