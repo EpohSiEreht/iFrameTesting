@@ -40,3 +40,9 @@ $('some-element').on('some-action', function() {
 - postMessage allows you to send data from one browser window to another, but the data isn't communicated through a server.
 
 - AJAX allows you to send data from the browser to the server and processed using a back-end language, which sends a response back to the browser.
+
+### Extra cross-domain example 
+[domain1](https://macmillantwin1.herokuapp.com/)
+[domain2](https://macmillantwin2.herokuapp.com/)
+
+- Click on domain2 and open your browser console. You'll notice that the parent (domain2) asks the child (domain1) to see if it can hear the parent. The child then responds and tells the parent element to get taller. The parent receives the message and decides to increase the child elements height.
