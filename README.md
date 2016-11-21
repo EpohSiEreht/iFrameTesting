@@ -19,6 +19,16 @@ A simple iFrame chat demo using .postMessage.
 
 - window.postMessage methods safely enables cross-origin communication. As long as the parent allows the child iFrame to communicate with it, it can safely send and receive data across domains and child iFrame elements.
 
+```javascript
+// Listen for iFrame message
+window.addEventListener('message',function(event) {
+    if(event.origin !== domain) {
+      return
+    };
+    // do something with the message"
+}
+```
+
 ### Difference between postMessage and AJAX:
 
 - postMessage allows you to send data from one browser window to another, but the data isn't communicated through a server.
