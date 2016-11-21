@@ -25,8 +25,14 @@ window.addEventListener('message',function(event) {
     if(event.origin !== domain) {
       return
     };
-    // do something with the message"
+    // do something with the message
 }
+
+// Send request to parent to remove this chat box
+$('.remove').on('click', function() {
+	// Use .postMessage to send data to a specific domain
+	parent.postMessage('remove', domain);
+});
 ```
 
 ### Difference between postMessage and AJAX:
