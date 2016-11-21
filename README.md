@@ -45,4 +45,4 @@ $('some-element').on('some-action', function() {
 1. [domain1](https://macmillantwin1.herokuapp.com/)
 2. [domain2](https://macmillantwin2.herokuapp.com/)
 
-- Click on domain2 and open your browser console. You'll notice that the parent (domain2) asks the child (domain1) to see if it can hear the parent. The child then responds and tells the parent element to get taller. The parent receives the message and decides to increase the child elements height.
+- Click on domain2 and open your browser console. You'll notice that the parent (domain2) asks the child (domain1) to see if it can hear the parent. The child then responds and tells the parent element to get taller. The parent receives the message and decides to increase the child elements height. This reoccurs every few seconds so the child element's height will continue to increase in height.
