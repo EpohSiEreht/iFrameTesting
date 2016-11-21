@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="./css/chat.css">
+  </head>
+  <body>
+    <div class="chat-box">
+      <header class="top-bar">
+        <p>User: <span class="bar-id"></span></p>
+        <span class="remove">X</span>
+      </header>
+
+      <ol class="chat-text"></ol>
+
+      <form>
+        <input class="typing-area" type="text" placeholder="Type something here"/>
+        <button type="button" id="send">Send</button>
+      </form>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="./js/chat.js"></script>
+</html>

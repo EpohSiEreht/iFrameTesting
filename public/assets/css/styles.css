@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#addiFrame {
+  position: relative;
+  width: 100%;
+  background-color: #4285f4;
+  color: #FFF;
+  border: none;
+  font-size: 40px;
+  margin-top: -8px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline:0;
+}
+
+iframe {
+  margin: 10px;
+}
