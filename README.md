@@ -20,18 +20,18 @@ A simple iFrame chat demo using .postMessage.
 - window.postMessage methods safely enables cross-origin communication. As long as the parent allows the child iFrame to communicate with it, it can safely send and receive data across domains and child iFrame elements.
 
 ```javascript
-// Listen for iFrame message
-window.addEventListener('message',function(event) {
+// Listen for iFrame message from child
+window.addEventListener('message', function(event) {
     if(event.origin !== domain) {
       return
     };
     // do something with the message
 }
 
-// Send request to parent to remove this chat box
-$('.remove').on('click', function() {
+// Send message to parent
+$('some-element').on('some-action', function() {
 	// Use .postMessage to send data to a specific domain
-	parent.postMessage('remove', domain);
+	parent.postMessage('some-data', domain);
 });
 ```
 
